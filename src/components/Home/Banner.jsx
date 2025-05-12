@@ -1,53 +1,44 @@
-import teamImage from "/assets/img/team-meeting.jpg"; 
-import girlReading from "/assets/img/girl-reading.jpg"; 
+import teamImage from "../../assets/images/team_meting.jpg";
+import girlReading from "../../assets/images/girl_eading.jpg";
+import arrowRightImg from "../../assets/images/arrow_right.png";
+import bannerCircle from "../../assets/images/banner_circle.png";
 
 export default function Banner() {
   return (
-    <div className="bg-black text-white min-h-screen flex items-center justify-center px-6 py-16 relative overflow-hidden">
+    <div className="bg-[#0e0f11] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Grid Background (optional) */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:30px_30px] pointer-events-none z-0"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(#bfbdbd_1px,transparent_1px),linear-gradient(90deg,#bfbdbd_1px,transparent_1px)] bg-[size:54px_54px] opacity-6 pointer-events-none z-0" />
 
-      <div className="max-w-7xl w-full z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="md:w-[58%] z-10 flex flex-col md:flex-row gap-20 items-center">
         {/* Left Content */}
         <div className="space-y-10">
           <div>
-            <h1 className="text-6xl font-bold leading-tight">
-              Crafting{" "}
+            <h1 className="text-[100px] font-semibold leading-tight">
+              Branding{" "}
               <span className="border border-white px-3 py-1 inline-block rounded-md">
-                Digital
+                Design
               </span>
             </h1>
-            <div className="mt-4 flex items-center gap-4">
-              <div className="w-12 h-px bg-white" />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="white"
-                className="w-10 h-10"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M13 5l7 7m0 0l-7 7m7-7H4"
-                />
-              </svg>
-              <h2 className="text-5xl font-bold">Experience</h2>
+            <div className="mt-4 flex items-center gap-4 ">
+              <img
+                src={arrowRightImg}
+                alt="arrowRightImg"
+              />
+              <h2 className="text-[100px] font-bold">Development</h2>
             </div>
           </div>
 
           {/* Bottom text + circle image */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-[50px]">
             <img
               src={girlReading}
               alt="Girl Reading"
-              className="w-24 h-24 object-cover rounded-full border-4 border-black"
+              className="max-w-[200px] max-h-[200px] object-cover rounded-full"
             />
-            <p className="max-w-md text-gray-300 text-lg">
-              Excellence projecting is devonshire dispatched remarkably on
-              estimating. Side in so life past. Continue indulged speaking the
-              was out.
+            <p className="text-[#ccc] text-[20px]">
+              A digital agency focused on web design and development! We have
+              designers, developers, strategists, and producers building
+              elevated websites in USA.
             </p>
           </div>
         </div>
@@ -57,7 +48,7 @@ export default function Banner() {
           <img
             src={teamImage}
             alt="Team Work"
-            className="rounded-lg object-cover w-full h-auto shadow-lg"
+            className="rounded-lg object-cover max-w-[352px] h-full shadow-lg"
           />
           <div className="absolute -left-10 bottom-10 w-32 h-32 bg-lime-400 rounded-full z-[-1]"></div>
         </div>
