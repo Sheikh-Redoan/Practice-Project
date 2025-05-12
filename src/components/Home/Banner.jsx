@@ -9,22 +9,23 @@ export default function Banner() {
       {/* Grid Background (optional) */}
       <div className="absolute inset-0 bg-[linear-gradient(#bfbdbd_1px,transparent_1px),linear-gradient(90deg,#bfbdbd_1px,transparent_1px)] bg-[size:54px_54px] opacity-6 pointer-events-none z-0" />
 
-      <div className="md:w-[58%] z-10 flex flex-col md:flex-row gap-20 items-center">
+      <div className="md:w-[70%] px-4 md:px-0 z-10 flex flex-col md:flex-row gap-10 md:gap-20 items-center">
         {/* Left Content */}
-        <div className="space-y-10">
+        <div className="md:space-y-8 space-y-4">
           <div>
-            <h1 className="text-[100px] font-semibold leading-tight">
+            <h1 className="text-[50px] md:text-[80px] font-semibold leading-tight">
               Branding{" "}
-              <span className="border border-white px-3 py-1 inline-block rounded-md">
+              <span className="border border-white px-2 md:px-3 py-0 md:py-1 inline-block rounded-md">
                 Design
               </span>
             </h1>
-            <div className="mt-4 flex items-center gap-4 ">
+            <div className="flex items-center gap-4 ">
               <img
                 src={arrowRightImg}
                 alt="arrowRightImg"
+                className="w-16 hidden md:block"
               />
-              <h2 className="text-[100px] font-bold">Development</h2>
+              <h2 className="text-[50px] md:text-[80px] font-bold">Development</h2>
             </div>
           </div>
 
@@ -33,7 +34,7 @@ export default function Banner() {
             <img
               src={girlReading}
               alt="Girl Reading"
-              className="max-w-[200px] max-h-[200px] object-cover rounded-full"
+              className="max-w-[200px] max-h-[200px] object-cover rounded-full hidden md:block"
             />
             <p className="text-[#ccc] text-[20px]">
               A digital agency focused on web design and development! We have
@@ -48,9 +49,13 @@ export default function Banner() {
           <img
             src={teamImage}
             alt="Team Work"
-            className="rounded-lg object-cover max-w-[352px] h-full shadow-lg"
+            className="rounded-lg object-cover w-full md:w-[352px] h-[422px] shadow-lg"
           />
-          <div className="absolute -left-10 bottom-10 w-32 h-32 bg-lime-400 rounded-full z-[-1]"></div>
+          <img
+              src={bannerCircle}
+              alt="Banner Circle"
+              className="absolute -left-16 -bottom-4 hidden md:block w-32 h-44"
+            />
         </div>
       </div>
     </div>
