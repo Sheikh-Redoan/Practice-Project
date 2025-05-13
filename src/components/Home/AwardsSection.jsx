@@ -27,7 +27,7 @@ const AwardsSection = () => {
   ];
 
   return (
-    <section className="relative bg-[#18191b] py-18">
+    <section className="relative bg-[#0E0F11] py-18">
       {/* Glow Background */}
       <div className="absolute right-4 bottom-0 h-[400px] w-[400px] bg-[#3b86f6] opacity-30 blur-[150px] "></div>
 
@@ -40,7 +40,7 @@ const AwardsSection = () => {
                 {item?.icon}
               </div>
 
-              <div className="bg-[#2a2d32] px-8 py-[30px] w-[500px] flex flex-col md:flex-row justify-between items-center">
+              <div className="bg-[#2a2d32] px-8 py-[30px] max-sm:w-[350px] sm:w-[500px] flex flex-col md:flex-row justify-between items-center">
                 <div className="bg-[#2a2d32] px-10 py-0 md:py-11 md:hidden block mb-2 ">
                   {item?.icon}
                 </div>
@@ -70,7 +70,7 @@ const AwardsSection = () => {
                 padding: "0px 0px 20px 20px",
               }}
             >
-              <h2 className="text-[200px] font-bold leading-none text-white">
+              <h2 className="md:text-[200px] text-[150px] font-bold leading-none text-white">
                 <CountUp end={40} suffix="+" duration={2} enableScrollSpy />
               </h2>
               <p className="text-[27px] text-white font-medium max-w-sm">
