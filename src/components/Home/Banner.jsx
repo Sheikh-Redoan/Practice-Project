@@ -5,7 +5,7 @@ import bannerCircle from "../../assets/images/banner_circle.png";
 
 export default function Banner() {
   return (
-    <div className="bg-[#0e0f11] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="bg-[#0e0f11] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Grid Background (optional) */}
       <div className="absolute inset-0 bg-[linear-gradient(#bfbdbd_1px,transparent_1px),linear-gradient(90deg,#bfbdbd_1px,transparent_1px)] bg-[size:54px_54px] opacity-6 pointer-events-none z-0" />
 
@@ -49,7 +49,7 @@ export default function Banner() {
           <img
             src={teamImage}
             alt="Team Work"
-            className="rounded-lg object-cover w-full md:w-[352px] h-[422px] shadow-lg"
+            className="rounded-lg object-cover w-full md:w-[400px] h-[422px] shadow-lg"
           />
           <img
               src={bannerCircle}
@@ -58,6 +58,6 @@ export default function Banner() {
             />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
