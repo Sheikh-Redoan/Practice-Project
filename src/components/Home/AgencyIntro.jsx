@@ -2,12 +2,13 @@ import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router";
 import Container from "../Container/Container";
+import CountUp from "react-countup";
 
 export default function AgencyIntro() {
   return (
     <section className="w-full relative bg-[linear-gradient(90deg,#18191B_50%,#0E0F11_50%)]">
-        <Container>
-          <div className="flex flex-col md:flex-row items-center justify-center">
+      <Container>
+        <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="w-full md:w-1/2  bg-[#18191b] h-[400px] flex flex-col items-center justify-center">
             {/* Left - Title */}
             <div className="space-y-6">
@@ -50,13 +51,16 @@ export default function AgencyIntro() {
         {/* Center - Stats */}
         <div className="flex justify-center items-center absolute top-[42%] md:top-[25%] left-[15%] md:left-[46%] ">
           <div className="border-[1px] border-[#ccc] px-10 py-8 text-center">
-            <h3 className="text-[100px] font-bold text_stroke">38K</h3>
+            <h3 className="text-[100px] font-bold text_stroke">
+              <CountUp end={38} enableScrollSpy suffix="K" duration={2} />
+            </h3>
+
             <p className=" text-white font-semibold text-[20px]">
               Completed Projects
             </p>
           </div>
         </div>
-        </Container>
+      </Container>
     </section>
   );
 }
