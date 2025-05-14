@@ -6,6 +6,7 @@ import Services from "../../components/Home/Services";
 import TeamSection from "../../components/Home/TeamSection";
 import TestimonialSection from "../../components/Home/TestimonialSection";
 import WorkSection from "../../components/Home/WorkSection";
+import ScrollToTopBtn from "../../shared/ScrollToTopBtn";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <TeamSection />
       <TestimonialSection />
       <BlogSection />
+      <ScrollToTopBtn />
     </>
   );
 };
