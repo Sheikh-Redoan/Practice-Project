@@ -7,9 +7,16 @@ const testimonials = [
       "Softvence Agency and their team were so professional. From the first discussion all the way through to the end they were exceptional. Their communication and patience are first class and this was so important to me whilst building a website. The quality of their work is superb! They have the skills to be able to do pretty much anything you ask of them and so this makes this very valuable. I will be using them for all future websites and any other website design and development help. Thanks team Softvence :)",
     name: "Steve Zee. ",
     role: "Founder at iMU & RegS Company",
-    avatar: "/images/anna.jpg",
+    avatar: "/src/assets/images/testimonials/steve_zee.png",
   },
-  // Add more testimonials if needed
+  {
+    quote:
+      "Softvence Agency was amazing to work with. They went above and beyond with our project. They delivered the Webflow site just as our wireframe showed and he was able to work out any bugs or fixes we requested in the span of 3-4 weeks without hesitation. That tells you they actually care about customer satisfaction instead of just doing the bare minimum. I appreciate all your hard work on this, team Softvence! 5 out of 5 stars! I highly recommend Softvence Agency for any website design and development projects!",
+    name: "colin hartlieb.",
+    role: "Founder at colinwolfpack",
+    avatar: "/src/assets/images/testimonials/colin_hartlieb.jpg",
+  },
+  
 ];
 
 const TestimonialSection = () => {
@@ -50,24 +57,24 @@ const TestimonialSection = () => {
           </div>
 
           {/* horizontal line with a downward V notch */}
-          <div className="relative h-[1px] bg-gray-700 w-full my-10">
+          <div className="relative h-[1px] bg-gray-700 w-full">
             <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-[#181818] rotate-45 border-l border-b border-gray-700 z-10" />
           </div>
 
           {/* Avatar Navigation */}
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-6 mt-10">
             <img
-              src="/src/assets/images/testimonial_1.jpg"
+              src="/src/assets/images/testimonials/testimonial_1.jpg"
               className="w-[78px] h-[78px] rounded-full border-4 border-transparent transition"
               alt="User 1"
             />
             <img
-              src="/src/assets/images/testimonial_2.jpg"
+              src="/src/assets/images/testimonials/testimonial_2.jpg"
               className="w-[98px] h-[98px] rounded-full border-4"
               alt="User 2"
             />
             <img
-              src="/src/assets/images/testimonial_3.jpg"
+              src="/src/assets/images/testimonials/testimonial_3.jpg"
               className="w-[78px] h-[78px] rounded-full border-4 border-transparent transition"
               alt="User 3"
             />
