@@ -6,7 +6,7 @@ import Container from "../../components/Container/Container";
 const Footer = () => {
   return (
     <footer className="bg-[#0E0F11] text-white">
-      <Container className="bg-[#18191B] w-full md:w-[90%] rounded-t-2xl">
+      <Container className="bg-[#18191B] w-full rounded-t-2xl">
         <div className="rounded-t-2xl border-y-[1px] border-[#303032] overflow-hidden">
           <div className="flex flex-col md:flex-row">
             {/* Left Column */}

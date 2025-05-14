@@ -9,7 +9,7 @@ export default function AgencyIntro() {
     <section className="w-full relative bg-[linear-gradient(90deg,#18191B_50%,#0E0F11_50%)]">
       <Container>
         <div className="flex flex-col md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/2  bg-[#18191b] h-[400px] flex flex-col items-center justify-center">
+          <div className="w-full md:w-1/2  bg-[#18191b] h-[400px] flex flex-col items-center md:items-start justify-center">
             {/* Left - Title */}
             <div className="space-y-6">
               <button className="px-8 py-2 text-[#ccc] border-[1px] border-[rgba(255, 255, 255, .3)] rounded-full font-semibold uppercase leading-tight">
@@ -22,7 +22,7 @@ export default function AgencyIntro() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2 bg-[#18191b] md:bg-[#0e0f11] h-[400px] flex flex-col items-center justify-center pt-80 md:pt-0 pb-36 md:pb-0">
+          <div className="w-full md:w-1/2 bg-[#18191b] md:bg-[#0e0f11] h-[400px] flex flex-col items-center md:items-end justify-center pt-80 md:pt-0 pb-36 md:pb-0">
             {/* Right - Text + Button */}
             <div className="space-y-8">
               <p className="text-[#ccc] font-semibold w-[400px]">

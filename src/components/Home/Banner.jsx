@@ -9,8 +9,8 @@ export default function Banner() {
     <section className="bg-[#0e0f11] text-white min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Grid Background (optional) */}
       <div className="absolute inset-0 bg-[linear-gradient(#bfbdbd_1px,transparent_1px),linear-gradient(90deg,#bfbdbd_1px,transparent_1px)] bg-[size:54px_54px] opacity-6 pointer-events-none z-0" />
-      <Container className='flex justify-center'>
-        <div className="md:w-[70%] px-4 md:px-0 z-10 flex flex-col md:flex-row gap-10 md:gap-20 items-center">
+      <Container>
+        <div className=" px-4 md:px-0 z-10 flex flex-col md:flex-row gap-10 md:gap-24 items-center">
           {/* Left Content */}
           <div className="md:space-y-8 space-y-4">
             <div>
