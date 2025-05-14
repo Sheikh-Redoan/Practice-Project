@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function ScrollToTopBtn() {
     const [isVisible, setIsVisible] = useState(false);
+    const [progress, setProgress] = useState(0);
 
     const isBrowser = () => typeof window !== 'undefined';
 
@@ -11,12 +12,20 @@ export default function ScrollToTopBtn() {
     }
 
     useEffect(() => {
+        if (!isBrowser()) return;
+
         const handleScroll = () => {
             if (window.scrollY > 100) {
                 setIsVisible(true);
             } else {
                 setIsVisible(false);
             }
+
+            // Progress calculation
+            const scroll = window.scrollY || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            const newProgress = (scroll / height) * 150.72; 
+            setProgress(newProgress);
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -53,11 +62,11 @@ export default function ScrollToTopBtn() {
                     fill="none"
                     stroke="#C9F31D"
                     strokeWidth="4"
-                    strokeDasharray="150.72"
-                    strokeDashoffset="10"
+                    strokeDasharray="150.72" 
+                    strokeDashoffset={150.72 - progress}
                     strokeLinecap="round"
                     style={{
-                        transition: "stroke-dashoffset 0.3s linear"
+                        transition: "stroke-dashoffset 10ms linear"
                     }}
                 />
 
