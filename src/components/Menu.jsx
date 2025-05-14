@@ -8,6 +8,7 @@ import { ImFacebook } from "react-icons/im";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaPinterestP } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { Link } from "react-router";
 
 const Menu = ({ className, onClose }) => {
   const accordionItems = [
@@ -23,12 +24,15 @@ const Menu = ({ className, onClose }) => {
     },
     {
       question: "Services",
+      link: "/services"
     },
     {
       question: "About",
+      link: "about_us"
     },
     {
       question: "Contact",
+      link: "/contact"
     },
   ];
 
@@ -76,14 +80,9 @@ const Menu = ({ className, onClose }) => {
                       onClick={() => toggleItem(index)}
                       aria-expanded={openIndex === index}
                     >
-                      <span className="text-white font-semibold text-[50px] max-[918px]:text-[40px] max-[700px]:text-[30px]">
+                      <Link to={item.link} className="text-white font-semibold text-[50px] max-[918px]:text-[40px] max-[700px]:text-[30px]">
                         {item.question}
-                      </span>
-                      {!item.answer ? (
-                        ``
-                      ) : (
-                        <HiPlus className="text-white font-bold text-[30px] max-[918px]:text-[25px] max-[700px]:text-[20px]" />
-                      )}
+                      </Link>
                     </button>
 
                     {/* Accordion content */}

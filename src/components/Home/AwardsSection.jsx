@@ -70,9 +70,18 @@ const AwardsSection = () => {
                 padding: "0px 0px 20px 20px",
               }}
             >
-              <h2 className="md:text-[200px] text-[150px] font-bold leading-none text-white">
+              {/* <h2 className="md:text-[200px] text-[150px] font-bold leading-none text-white">
                 <CountUp end={40} suffix="+" duration={2} enableScrollSpy />
-              </h2>
+              </h2> */}
+              <div className="relative inline-block">
+                <h2 className="md:text-[200px] text-[150px] font-bold leading-none text-white">
+                  <CountUp end={40} duration={2} enableScrollSpy />
+                </h2>
+                <span className="absolute bg-[#0E0F11] w-12 h-12 rounded-full text-white font-normal text-[30px] md:text-[40px] top-9 right-4 translate-x-1/2 -translate-y-1/2 z-50 flex items-center justify-center ">
+                  +
+                </span>
+              </div>
+
               <p className="text-[27px] text-white font-medium max-w-sm">
                 We have won 40+ awards and we believe in quality.
               </p>

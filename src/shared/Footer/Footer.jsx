@@ -38,10 +38,10 @@ const Footer = () => {
                 {/* Contact */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-[90%] space-y-3 md:space-y-0">
                   <Link to="mailto:info@dixor.com" className="text-white text-[20px] font-medium hover:text-[#C9F31D]">
-                    info@dixor.com
+                    hello@softvence.agency
                   </Link>
                   <Link to="tel:+4733378901" className="text-[20px] font-medium text-[#C9F31D]">
-                    +47 333 78 901
+                    +44-20-7328-4499
                   </Link>
                 </div>
               </div>
